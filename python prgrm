@@ -1,0 +1,22 @@
+prhrm no 2 in python ( 9/11/2021)
+import datetime
+date = datetime.date.today()
+currentYear = int(date.strftime("%Y"))
+print("enter the last year")
+endYear = int(input())
+print("list of leap year:")
+for year in range(currentYear,endYear):
+    if((year%4==0)and(year%100!= 0)or(year%400==0)):
+        print(year)
+
+output
+enter the last year
+2050
+list of leap year:
+2024
+2028
+2032
+2036
+2040
+2044
+2048
